@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-size: content;
+    background-repeat: initial ;
+    background-color: yellow;
+    overflow: hidden;
+}
+@font-face {
+    font-family: Mario;
+    font-size: x-large;
+    src: url(/fonts/RetroMario-Regular.otf);
+}
+h1{
+    font-family: mario;
+    text-shadow: 1rem .5rem 4px rgb(1, 19, 77);
+    color: rgb(64 183 253);
+    font-size: 8rem;
+    padding-top: 2rem;
+}
+
+@keyframes mario {
+    0%   {left: 0px;}
+    10% {left: 40%;}
+    100% {left: 40%;}
+}
+
+@keyframes cortina {
+    0%   {top: 1400px;}
+    100% {top: 200px;}
+}
+.anima1{
+    position: relative;
+    animation: mario 20s linear;
+    animation-delay: 2s;
+}
+.anima3{
+animation: cortina 3s;
+position: relative;
+}
+.capa2{
+    z-index: 2;
+    border: 0;
+}
+.capa1{
+    position: absolute;
+    left: 0px;
+    top: 2200px;
+    width: calc(15% - 150px);
+    z-index: 1;
+}
+.capa0{
+    border: 0;
+    padding: 0;
+    z-index: 0;
+    position: static;
+
+}
+.text{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    text-justify: center;
+    padding-top: 55%;
+}
