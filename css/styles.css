@@ -8,7 +8,7 @@ body{
     overflow: hidden;
 }
 @font-face {
-    font-family: Mario;
+    font-family: mario;
     font-size: x-large;
     src: url(/fonts/RetroMario-Regular.otf);
 }
